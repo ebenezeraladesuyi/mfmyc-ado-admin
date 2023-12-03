@@ -102,12 +102,15 @@ const MemberForm = () => {
                 />
                 <p className="text-[8px] mt-[-10px] mb-[5px]">{errors?.phoneNumber && errors?.phoneNumber.message}</p>
 
-                <input className="w-full h-[45px] p-[10px]  border-[1px] rounded outline-none text-[14px]" type="date" placeholder="Date Of Birth" 
-                {...register('dateOfBirth')}
-                />
-                <p className="text-[8px] mt-[-10px] mb-[5px]">{errors?.dateOfBirth && errors?.dateOfBirth.message}</p>
+                <div className="w-full ">
+                    <h6 className="text-[11px] mb-[3px]">Date of Birth</h6>
+                    <input className="w-full h-[45px] p-[10px]  border-[1px] rounded outline-none text-[14px]" type="date" placeholder="Date Of Birth" 
+                    {...register('dateOfBirth')}
+                    />
+                    <p className="text-[8px] mt-[-10px] mb-[5px]">{errors?.dateOfBirth && errors?.dateOfBirth.message}</p>
+                </div>
 
-                <input className="w-full h-[40px] p-[10px]  border-[1px] rounded outline-none text-[14px]" type="text" placeholder="Marital Status" 
+                <input className="w-full h-[40px] p-[10px]  border-[1px] rounded outline-none text-[14px] mt-[10px]" type="text" placeholder="Marital Status" 
                 {...register('maritalStatus')}
                 />
                 <p className="text-[8px] mt-[-10px] mb-[5px]">{errors?.maritalStatus && errors?.maritalStatus.message}</p>
