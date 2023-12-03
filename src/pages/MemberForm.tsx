@@ -74,11 +74,11 @@ const MemberForm = () => {
     })
 
   return (
-    <div className="w-full min-h-screen bg-center mt-[0px] h-[100%] bg-bgPix bg-cover bg-no-repeat flex  justify-center items-center font-pop relative">
+    <div className="w-full min-h-screen bg-center mt-[0px] h-[100%] bg-bgPi bg-purple-500 bg-cover bg-no-repeat flex  justify-center items-center font-pop relative">
 
         <div className="bg-black absolute w-[100%] h-[100%] top-0 left-0 opacity-40"></div>
 
-        <div className="w-[90%] md:w-[70%] lg:w-[40%] bg-white   rounded-md z-30 p-[20px] py-[30px] mt-[120px] mb-[30px]">
+        <div className="w-[90%] md:w-[70%] lg:w-[40%] bg-white   rounded-md z-30 p-[20px] py-[30px] mt-[100px] mb-[30px]">
             <h5 className="text-center font-semibold mb-[30px] animate-pulse">MEMBER'S BIO-DATA</h5>
 
             <form onSubmit={submit} action="" className="h-[90%] flex justify-around flex-col gap-2">

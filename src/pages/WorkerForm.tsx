@@ -76,12 +76,12 @@ const WorkerForm = () => {
 
 
   return (
-    <div className="w-full min-h-screen bg-center mt-[0px] h-[100%] bg-bgPix bg-cover bg-no-repeat flex  justify-center items-center font-pop relative">
+    <div className="w-full min-h-screen bg-center mt-[0px] h-[100%] bg-bgPi bg-purple-500 bg-cover bg-no-repeat flex  justify-center items-center font-pop relative">
 
         <div className="bg-black absolute w-[100%] h-[100%] top-0 left-0 opacity-40"></div>
 
-        <div className="w-[90%] md:w-[70%] lg:w-[40%] bg-white h-[900px  rounded-md z-30 p-[20px] py-[30px] mt-[120px] mb-[30px]">
-            <h5 className="text-center font-semibold mb-[30px] animate-pulse">WORKER'S BIO-DATA</h5>
+        <div className="w-[90%] md:w-[70%] lg:w-[40%] bg-white h-[900px  rounded-md z-30 p-[20px] py-[30px] mt-[100px] mb-[30px]">
+            <h5 className="text-center font-semibold mb-[30px] animate-pulse">WORKER's BIO-DATA</h5>
 
             <form onSubmit={submit}  className="h-[90%] flex justify-around flex-col gap-2">
                 <input className="w-full h-[40px] p-[10px]  border-[1px] rounded outline-none text-[14px]" type="text" placeholder="First Name" 
@@ -109,10 +109,13 @@ const WorkerForm = () => {
                 />
                 <p className="text-[8px] mt-[-10px] mb-[5px]">{errors?.departmentInChurch && errors?.departmentInChurch.message}</p>
 
-                <input className="w-full h-[45px] p-[10px]  border-[1px] rounded outline-none text-[14px]" type="date" placeholder="Date Of Birth" 
+                <div className="w-full ">
+                    <h6 className="text-[11px] mb-[3px]">Date of Birth</h6>
+                    <input className="w-full h-[45px] p-[10px]  border-[1px] rounded outline-none text-[14px]" type="date" placeholder="Date Of Birth" 
                 {...register('dateOfBirth')}
                 />
                 <p className="text-[8px] mt-[-10px] mb-[5px]">{errors?.dateOfBirth && errors?.dateOfBirth.message}</p>
+                </div>
 
                 <input className="w-full h-[40px] p-[10px]  border-[1px] rounded outline-none text-[14px]" type="text" placeholder="Marital Status" 
                 {...register('maritalStatus')}

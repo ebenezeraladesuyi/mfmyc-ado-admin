@@ -4,7 +4,7 @@ import logo from "../assets/mfmycchurchlogo.png"
 
 const Home = () => {
   return (
-    <div className="w-full md:h-screen bg-center mt-[0px] h-[100%] bg-bgPix bg-cover bg-no-repeat flex  justify-center items-center font-pop relative" >
+    <div className="w-full md:h-screen bg-center mt-[0px] h-[100%] bg-bgPi bg-cover bg-no-repeat flex bg-purple-500 justify-center items-center font-pop relative" >
 
         <div className="bg-black absolute w-[100%] h-[100%] top-0 left-0 opacity-40"></div>
 
@@ -34,7 +34,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="w-full md:w-[50%] flex justify-center items-center mt-[90px] md:mt-0 mb-[20px] md:mb-0">
+            <div className="w-full md:w-[50%] flex justify-center items-center mt-[70px] md:mt-0 mb-[20px] md:mb-0">
                 <img className="w-[200px] md:w-[300px] lg:w-[450px] animate-spi delay-300" src={logo} alt="" />
             </div>
         </div>
