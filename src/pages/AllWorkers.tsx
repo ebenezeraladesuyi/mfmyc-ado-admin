@@ -29,9 +29,13 @@ const AllWorkers = () => {
 
   return (
     <div className="w-full min-h-screen bg-center mt-[0px] h-[100%] bg-bgPi bg-purple-500 bg-cover bg-no-repeat flex  justify-center items-center font-pop relative">
-        <div className="w-[90%] md:w-[70%] lg:w-[75%]  rounded-md z-3 p-[20px] py-[30px] mt-[80px] mb-[30px] flex flex-col  gap-4">
+        <div className="w-[90%] md:w-[90%] lg:w-[75%]  rounded-md z-3 p-[20px] py-[30px] mt-[80px] mb-[30px] flex flex-col  gap-4 justify-cente items-center">
 
-            <input type="text" className="w-full h-[40px] rounded p-2 outline-none text-[13px]" placeholder="Search Worker's Name" />
+            <div>
+                {/* <input type="text" className="w-full h-[40px] rounded p-2 outline-none text-[13px]" placeholder="Search Worker's Name" /> */}
+            </div>
+
+            <h5 className="text-[20px] w-[180px] text-white font-semibold border-b-[3px] border-b-white animate-bounce text-center mb-[20px]">All Workers</h5>
 
             <div className="flex flex-wrap w-full gap-4 justify-center">
                 {users.map((user) => (
