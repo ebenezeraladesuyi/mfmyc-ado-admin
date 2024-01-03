@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // import React from 'react'
 
 import { useEffect, useState } from "react";
@@ -16,8 +17,16 @@ const AllWorkers = () => {
         try {
         const getAllWorkers = await axios.get(`${url}/worker/allregisteredworker`); 
         setUsers(getAllWorkers.data.data);
+        // console.log(getAllWorkers.data.data)
+
+        // const sortedUsers = getAllWorkers.data.data.slice().sort(({a, b} : any) => a.surname.localeCompare(b.surname));
+        // setUsers(sortedUsers);
+
+        // const sortedUsers = getAllWorkers.data.data || []; // Default to an empty array if data is undefined
+        // setUsers(sortedUsers.sort(({a, b}: any) => (a.surname || '').localeCompare(b.surname || '')));
+        //   console.log(sortedUsers);
         
-        //   console.log(getAllWorkers.data.data)
+        //   console.log(sortedUsers)
         } catch (error) {
         console.error('Error fetching users:', error);
         }  
