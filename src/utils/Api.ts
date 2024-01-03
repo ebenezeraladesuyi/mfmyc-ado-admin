@@ -3,7 +3,7 @@ import { iMember } from "../types/interface";
 import { iWorker } from "../types/interface";
 
 
-const url = "https://mfmyc-ado.onrender.com"
+export const url = "https://mfmyc-ado.onrender.com"
 
 
  

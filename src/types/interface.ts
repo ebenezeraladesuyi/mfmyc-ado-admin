@@ -1,4 +1,5 @@
 export interface iMember {
+    _id? : string;
     firstName?: string;
     surname? : string;
     email?: string;
@@ -13,6 +14,7 @@ export interface iMember {
 }
 
 export interface iWorker {
+    _id? : string;
     firstName?: string;
     surname? : string;
     email?: string;
