@@ -1,18 +1,13 @@
 /* eslint-disable react-refresh/only-export-components */
 // import React from 'react'
 import { createBrowserRouter } from "react-router-dom"
-// import { HomeLayout, MemberLayout, WorkersLayout } from "../layout"
-// import Home from "../pages/Home"
 import { lazy } from "react"
 import AllWorkersLayout from "../layout/AllWorkersLayout"
-// import AllWorkers from "../pages/AllWorkers";
-// import WorkerForm from "../pages/WorkerForm"
-// // import MemberForm from "../pages/MemberForm"
+import { AllMembersLayout } from "../layout"
+// import AllMembers from "../pages/AllMembers"
 
-// const Home = lazy(() => import("../pages/Home"));
-// const WorkerForm = lazy(() =>import("../pages/WorkerForm"));
-// const MemberForm = lazy(() =>import("../pages/MemberForm"))
 const AllWorkers = lazy(() => import("../pages/AllWorkers"))
+const AllMembers = lazy(() => import("../pages/AllMembers"))
 
 
 export const element = createBrowserRouter([
@@ -23,6 +18,16 @@ export const element = createBrowserRouter([
             {
             index: true,
             element: <AllWorkers />
+            }
+        ]
+    },
+    {
+        path: "/allmembers",
+        element: <AllMembersLayout />,
+        children: [
+            {
+            index: true,
+            element: <AllMembers />
             }
         ]
     },

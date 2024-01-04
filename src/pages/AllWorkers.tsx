@@ -55,6 +55,7 @@ const AllWorkers = () => {
                         <h5>Phone Number: <span className="font-semibold text-[12px]">{user?.phoneNumber}</span></h5>
                         <h5>Department-in-Church: <span className="font-semibold text-[12px]">{user?.departmentInChurch}</span></h5>
                         <h5>Marital Status: <span className="font-semibold text-[12px]">{user?.maritalStatus}</span></h5>
+                        <h5>Address: <span className="font-semibold text-[12px]">{user?.address}</span></h5>
                         <h5>Date-of-Birth: <span className="font-semibold text-[12px]">{user?.dateOfBirth}</span></h5>
                         <h5>Educational Qualification: <span className="font-semibold text-[12px]">{user?.educationalQualification}</span></h5>
                         <h5>Emergency Contact Name: <span className="font-semibold text-[12px]">{user?.emergencyContactName}</span></h5>
